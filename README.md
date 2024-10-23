@@ -1,12 +1,14 @@
 # README
 
+> `git`仓库:[meteor041/P3-auto-test: an auto test program for P3 in CO](https://github.com/meteor041/P3-auto-test)
+
 ## 用途
 
-> `autoRun.py`: 自动运行asm文件,生成机器码文件,内存文件,并输出寄存器内容
+> `autoRun.py`: 自动运行`asm`文件,生成机器码文件,内存文件,并输出寄存器内容
 >
-> `compareMemory.py`: 针对MIPS中Data Segment的导出文件与Logisim中RAM的Memory导出文件的比较程序
+> `compareMemory.py`: 针对`MIPS`中Data Segment的导出文件与`Logisim`中RAM的Memory导出文件的比较程序
 >
-> `compareRegister.py`:针对MIPS中寄存器记录文件与`Logisim`中寄存器的日志文件的比较程序
+> `compareRegister.py`:针对`MIPS`中寄存器记录文件与`Logisim`中寄存器的日志文件的比较程序
 
 ## 使用方式
 
