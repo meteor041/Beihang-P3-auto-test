@@ -52,3 +52,12 @@ python compareMemory.py mips_memory.txt logisim_memory.txt > result.txt
 python compareRegister.py mips_registers.txt logisim_registers.txt >> result.txt
 ```
 
+### 查看输出结果
+
+> result.txt中正确输出结果为
+
+```
+Two Memories are the same!!!
+Two registers are the same!!!
+```
+
