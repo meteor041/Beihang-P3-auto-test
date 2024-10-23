@@ -1,7 +1,5 @@
 # README
 
-刘鑫宇 23371510
-
 ## 用途
 
 > `autoRun.py`: 自动运行asm文件,生成机器码文件,内存文件,并输出寄存器内容
@@ -11,6 +9,15 @@
 > `compareRegister.py`:针对MIPS中寄存器记录文件与`Logisim`中寄存器的日志文件的比较程序
 
 ## 使用方式
+
+> 按照下列步骤操作
+
+### 随机生成`asm`测试文件
+
+```bash
+# 将asm测试文件输出到test.asm
+python autoGenerate.py
+```
 
 ### 运行`asm`测试文件
 
@@ -41,4 +48,3 @@ python compareMemory.py mips_memory.txt logisim_memory.txt > result.txt
 python compareRegister.py mips_registers.txt logisim_registers.txt >> result.txt
 ```
 
-或直接运行`bash.sh`
