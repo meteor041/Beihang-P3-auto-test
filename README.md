@@ -4,6 +4,8 @@
 
 ## 用途
 
+> `autoGenerate.py`:自动生成`asm`测试文件
+>
 > `autoRun.py`: 自动运行`asm`文件,生成机器码文件,内存文件,并输出寄存器内容
 >
 > `compareMemory.py`: 针对`MIPS`中Data Segment的导出文件与`Logisim`中RAM的Memory导出文件的比较程序
