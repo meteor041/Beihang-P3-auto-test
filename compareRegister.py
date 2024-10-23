@@ -23,7 +23,7 @@ def main():
         for i, x in enumerate(line1.split('\t')):
             logisim_registers[i] = int(x, 16)
 
-    with open(mips_registers_path, 'r') as mips_file:
+    with open(mips_registers_path, 'r', encoding='utf-16') as mips_file:
         mips_lines = mips_file.readlines()
         for line in mips_lines:
             if line == '\n':
