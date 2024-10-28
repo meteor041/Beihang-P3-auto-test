@@ -15,7 +15,7 @@ def rand_ori_lui():
 
 def main():
     number = 500
-    op_set = ['add', 'sub', 'ori', 'lw', 'sw', 'beq', 'lui', 'nop', 'mark']
+    op_set = ['add', 'sub', 'ori', 'lw', 'sw', 'lui', 'nop', 'mark']
     mark_cnt = 0
     ready_to_mark = []
     with open("../docs/test.asm", "w") as f:

@@ -11,17 +11,20 @@ def main():
     if len(sys.argv) == 2:
         student_circ_path = sys.argv[1]
     else:
-        print("Wrong argument")
-        return
+        student_circ_path = "../your_cpu/cpu_wrong.circ"
 
 
-    option1 = ('java -jar logisim.jar ' + test_circ_path + ' -tty table '
+    option1 = ('java -jar logisim.jar ' + test_circ_path +
+               ' -sub ' + standard_cpu_path + ' ' + standard_cpu_path + ' -tty table '
               '-load ' + machine_code_path + ' > ' + right_ans_path)
+    print(option1)
     os.system(option1)
 
+    # java -jar logisim.jar ../standard_cpu/cpu_test.circ -sub ../standard_cpu/cpu.circ ../your_cpu/cpu_wrong.circ -tty table -load ../docs/machine_code.txt
     option2 = ('java -jar logisim.jar ' + test_circ_path +
               ' -sub ' + standard_cpu_path + ' ' + student_circ_path + ' -tty table '
               '-load ' + machine_code_path + ' > ' + my_ans_path)
+    print(option2)
     os.system(option2)
 
 

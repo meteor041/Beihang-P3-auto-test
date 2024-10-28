@@ -30,6 +30,7 @@
     </tool>
   </lib>
   <lib desc="file#cpu.circ" name="7"/>
+  <lib desc="file#E:\Documents\computer_organization\cpu_for_submmit\P3_auto_test\your_cpu\Single_Cycle_CPU_ljr.circ" name="8"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -108,17 +109,24 @@
       <a name="label" val="halt"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="4" loc="(250,400)" name="Counter">
+      <a name="width" val="6"/>
+      <a name="max" val="0x3f"/>
+      <a name="ongoal" val="stay"/>
+    </comp>
+    <comp lib="0" loc="(180,470)" name="Clock"/>
     <comp lib="0" loc="(600,510)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(600,330)" name="Pin">
+    <comp lib="0" loc="(600,580)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
+      <a name="width" val="32"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(600,440)" name="Pin">
+    <comp lib="0" loc="(600,170)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
@@ -130,27 +138,21 @@
       <a name="width" val="32"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(600,270)" name="Pin">
+    <comp lib="8" loc="(480,350)" name="main"/>
+    <comp lib="0" loc="(600,440)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="3" loc="(360,390)" name="Comparator">
+      <a name="width" val="6"/>
       <a name="mode" val="unsigned"/>
     </comp>
-    <comp lib="4" loc="(250,400)" name="Counter">
-      <a name="ongoal" val="stay"/>
-    </comp>
-    <comp lib="0" loc="(600,170)" name="Pin">
+    <comp lib="0" loc="(600,330)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="width" val="32"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(240,330)" name="Constant">
-      <a name="width" val="8"/>
-      <a name="value" val="0x4"/>
     </comp>
     <comp lib="0" loc="(600,370)" name="Pin">
       <a name="facing" val="west"/>
@@ -158,68 +160,15 @@
       <a name="width" val="5"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(180,470)" name="Clock"/>
-    <comp lib="7" loc="(480,350)" name="main"/>
-    <comp lib="0" loc="(600,580)" name="Pin">
+    <comp lib="0" loc="(240,330)" name="Constant">
+      <a name="width" val="6"/>
+      <a name="value" val="0x4"/>
+    </comp>
+    <comp lib="0" loc="(600,270)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
       <a name="labelloc" val="east"/>
-    </comp>
-  </circuit>
-  <circuit name="student">
-    <a name="circuit" val="student"/>
-    <a name="clabel" val=""/>
-    <a name="clabelup" val="east"/>
-    <a name="clabelfont" val="SansSerif plain 12"/>
-    <comp lib="0" loc="(540,680)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(540,370)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="5"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(540,170)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(540,440)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(540,510)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(540,270)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(540,330)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(540,580)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(240,350)" name="Pin">
-      <a name="tristate" val="false"/>
     </comp>
   </circuit>
 </project>

@@ -1,3 +1,4 @@
+# coding=gb2312
 import os
 import tkinter as tk
 from tkinter import messagebox
@@ -27,9 +28,14 @@ def run():
     file_path = path_entry.get()
     print("file_path: " + file_path)
     os.system("python autoGenerate.py")
+    print("代码自动生成程序运行完毕")
     os.system("python autoRun.py > ../docs/mips_registers.txt")
+    print("标准运行结果生成程序运行完毕")
     os.system("python logisimRun.py " + file_path)
+    print("测试文件运行结果生成程序运行完毕")
     os.system("python beatMatch.py")
+    print("对拍程序运行完毕")
+
 
 bm_frame = tk.Frame(root)
 bm_frame.pack(pady=10)
