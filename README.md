@@ -11,6 +11,10 @@
 > `compareMemory.py`: 针对`MIPS`中Data Segment的导出文件与`Logisim`中RAM的Memory导出文件的比较程序
 >
 > `compareRegister.py`:针对`MIPS`中寄存器记录文件与`Logisim`中寄存器的日志文件的比较程序
+>
+> `logisimRun.py`:利用测试电路运行待测电路,生成检测结果
+>
+> `gui.py`:创建图形化界面
 
 ## 使用方式
 
